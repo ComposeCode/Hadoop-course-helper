@@ -32,6 +32,20 @@ This diagram illustrates the main types of nodes in a Hadoop cluster:
 
 YARN: Yet Another Resource Negotiator. This service manages worker node CPU and memory resources. Other lessons provide more detail about the architecture and operation of the YARN service.
 
-HDFS: Hadoop Distributred File System (HDFS). This service manages cluster storage resources.
+HDFS: Hadoop Distributed File System (HDFS). This service manages cluster storage resources.
 
-Worker nodes provide CPU, memory, storage and network resources to a Hadoop cluster. The resources provided by these nodes are used to process data. 
+Worker nodes provide CPU, memory, storage and network resources to a Hadoop cluster. The resources provided by these nodes are used to process data. The network resources for worker nodes are managed by the underlying operating system. Network resources are also managed at the switch level by the network operating system (NOS).
+
+## Apache Software Frameworks
+
+```
+  Need diagram of Hadoop and different apache frameworks
+```
+
+Hadoop is a collection of different software frameworks and not a single piece of software. Most of the frameworks are part of the Apache software ecosystem. Each tool in Hadoop is designed for a specific purpose. The functionality of some tools overlap but typically one tool is going to be better than others when performing certain tasks.
+
+## Data Management and Operations Frameworks
+
+There are two data management frameworks known as HDFS and YARN:
+
+- HDFS is a Java-based distributed file system which provides scalable, reliable and high-throughput access to application data stored across multiple servers. The file system is similar to many other conventional file systems such as the Linux File System. HDFS supports read, write and delete operations on file. 
