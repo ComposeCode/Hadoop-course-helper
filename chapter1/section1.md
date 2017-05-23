@@ -122,4 +122,18 @@ HDP (HortonWorks Data Platform) is an open enterprise version of Hadoop distribu
 
 The main benefit to using the HDP distribution is that HortonWorks has tested the distribution thoroughly.
 
-### 
+### An example Hadoop cluster
+
+```
+  Need hadoop cluster diagram
+```
+
+This particular Hadoop cluster is made up of four master nodes, six worker nodes and two utility nodes. The cluster is running various services, like YARN and HDFS. Each node in the cluster can run one or more services.
+
+Master Nodes: the four master nodes are running typical master node components: NameNode, ZooKeeper, MapReduce History Server, Resource Manager, ZooKeeper, Oozie, YARN Timeline Server, Falcon Server, WebHCat, Hive, etc.
+
+Worker Nodes: The worker nodes run worker node services, such as the NodeManager (part of YARN) and the DataNode is a HDFS Component.
+
+Utility Nodes: The utility nodes are running redunant Knox 
+
+Cluster Services:
