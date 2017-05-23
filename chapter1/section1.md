@@ -153,4 +153,21 @@ The components listed here are described below:
 - WebHCat Server: Hive service master component
 - Falcon Server: Falcon service master component
 - Knox: Knox service master component
-- Ambari Server: Ambari service master component 
+- Ambari Server: Ambari service master component
+
+### Cluster Management Options
+
+There are two major tasks to managing a Hadoop Cluster:
+
+  - Managing the underlying base operating system
+  - Managing the actual Hadoop cluster software
+
+Managing Base Operationg System:
+
+- Configuration on the base operating system should be managed using a configuration management tool such as Chef, Puppet, Ansible, Salt, MGMT or another tool. These tools all have their own advantages and disadvantages, some are faster than others etc.
+
+Managing Hadoop Cluster Software:
+
+- There are many options available for managing Hadoop cluster software. The Ambari server features a built-in Web UI and offers a REST API if you choose to build your own web-based management tools.
+
+- Each Hadoop software framework also provides its own management tools and APIs. These tools often include a command-line interface as well as Web-based tools and REST APIs. There are also a number of third-part tools available for cluster management. Once again, automaiton is important becuse each Hadoop service might have dozens, hundreds or thousands of worker components.
