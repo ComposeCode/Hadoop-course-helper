@@ -114,4 +114,12 @@ There are a number of different security frameworks within Hadoop:
 
 - Apache Knox is the perimeter gateway protecting a Hadoop cluster. It provides a single point of authentication into a Hadoop cluster.
 
-- Apache Ranger is a centralized security framework offering fine-grained. 
+- Apache Ranger is a centralized security framework offering fine-grained policy controls for HDFS, Hive, KBase, Knox, Storm, Kafka and Solr. Using the ranger console, security administrators can easily manage policies for access to files, directories, databases, tables and columns. These policies can be set for individual users or groups within Hadoop.
+
+### Hortonworks Data Platform (HDP)
+
+HDP (HortonWorks Data Platform) is an open enterprise version of Hadoop distributed by Hortonworks. It includes a single installation utility that installs many of the Apache Hadoop software frameworks. Even the installer is pure Hadoop.
+
+The main benefit to using the HDP distribution is that HortonWorks has tested the distribution thoroughly.
+
+### 
