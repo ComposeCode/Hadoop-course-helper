@@ -134,6 +134,23 @@ Master Nodes: the four master nodes are running typical master node components: 
 
 Worker Nodes: The worker nodes run worker node services, such as the NodeManager (part of YARN) and the DataNode is a HDFS Component.
 
-Utility Nodes: The utility nodes are running redunant Knox 
+Utility Nodes: The utility nodes are running redunant Knox gateway components that provide perieter security for the cluster. These noes also have the Hadoop client software installed so that they can function as cluster gateway machines. FOr example, a user could use the SSH utility to log in from their mahine to a utility node and then run HDFS commands. Utility nodes can also run things like Ambari which is used to manage the cluster.
 
-Cluster Services:
+Cluster Services: some services are made up of different software components. For example, the HDFS service is made up of the NameNode and secondary NameNode master components. Some services, like Oozie, have only a single master component. Some services run multiple master component instances for higher availability. For example, ZooKeeper can be run on three different servers, which increases ZooKeeper's fault tolerance.
+
+The components listed here are described below:
+- NameNode: HDFS Service Master Component
+- Secondary NameNode: HDFS Service Master Component
+- DataNode: HDFS Service Worker Component
+- Resource Manager: YARN Service Master Component
+- YARN Tieline Server: YANR Service Master Conponent
+- NodeManager: YARN Service Worker Component
+- MapReduce History Server: MapReduce master Component
+- ZooKeeper: ZooKeeper service Master Component
+- Oozie: Oozie service master component
+- HiveServer2: Hive Service master component
+- Hive Metastore Server: Hive Service Master Component
+- WebHCat Server: Hive service master component
+- Falcon Server: Falcon service master component
+- Knox: Knox service master component
+- Ambari Server: Ambari service master component 
