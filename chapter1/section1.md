@@ -171,3 +171,15 @@ Managing Hadoop Cluster Software:
 - There are many options available for managing Hadoop cluster software. The Ambari server features a built-in Web UI and offers a REST API if you choose to build your own web-based management tools.
 
 - Each Hadoop software framework also provides its own management tools and APIs. These tools often include a command-line interface as well as Web-based tools and REST APIs. There are also a number of third-part tools available for cluster management. Once again, automaiton is important becuse each Hadoop service might have dozens, hundreds or thousands of worker components.
+
+### Management with Ambari
+
+```
+  Need an Ambari screenshot or other info.
+```
+
+Ambari is the primary management interface in today's Hadoop cluster. Ambari provides a single control point with many important features:
+
+- Enables interactive, wizard-driven installation of Hadop across any number of hosts. Ambari automatically chooses how to distribute Hadoop services across cluster nodes but those choices can be user-modified prior to software installation.
+-
+-
