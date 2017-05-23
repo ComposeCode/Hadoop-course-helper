@@ -8,6 +8,32 @@ Hadoop Clusters are scalable and range from as few as one machine (virtual or ph
 
 Hadoop also uses distributed storage and processing to achieve massive scalability. Large datasets are automatically split into smaller chunks, called blocks which are distributed across the cluster of machines. In addition to this, each machine commonly processes its local block of data. This means that processing is distributed too, potentially across hundreds of CPUs and hundreds of gigabytes of memory.
 
+The three V's are used to describe Big Data:
+- Volume, velocity and variety
+
+The three Big Data Formats:
+- Structured, semi-structured and unstructured.
+- Foe example, structured data is data stored in a relational database or data warehouse.
+
+The Goals of Hadoop:
+- To leverage inexpensive enterprise-grade hardware to create large clusters
+- create massively scalable clusters through distributed storage and processing
+
+Which type of Hadoop Cluster nodes provide resources for data processing:
+- Worker nodes
+
+Which Service Manages cluster CPU and memory resources?
+- YARN
+
+Which service manages Cluster Storage Resources?
+- HDFS
+
+Which framework provides a high-performance coordination service for distributed applications?
+- ZooKeeper
+
+Which framework provides provisioning, management and monitoring capabilities?
+- Ambari 
+
 ## Hadoop Cluster Node Types
 
 Hadoop is often deployed on rack-based servers but can be deployed on Virtual Machines either on-premises or on public cloud.
@@ -171,15 +197,3 @@ Managing Hadoop Cluster Software:
 - There are many options available for managing Hadoop cluster software. The Ambari server features a built-in Web UI and offers a REST API if you choose to build your own web-based management tools.
 
 - Each Hadoop software framework also provides its own management tools and APIs. These tools often include a command-line interface as well as Web-based tools and REST APIs. There are also a number of third-part tools available for cluster management. Once again, automaiton is important becuse each Hadoop service might have dozens, hundreds or thousands of worker components.
-
-### Management with Ambari
-
-```
-  Need an Ambari screenshot or other info.
-```
-
-Ambari is the primary management interface in today's Hadoop cluster. Ambari provides a single control point with many important features:
-
-- Enables interactive, wizard-driven installation of Hadop across any number of hosts. Ambari automatically chooses how to distribute Hadoop services across cluster nodes but those choices can be user-modified prior to software installation.
--
--
