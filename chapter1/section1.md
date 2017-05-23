@@ -32,7 +32,7 @@ Which framework provides a high-performance coordination service for distributed
 - ZooKeeper
 
 Which framework provides provisioning, management and monitoring capabilities?
-- Ambari 
+- Ambari
 
 ## Hadoop Cluster Node Types
 
