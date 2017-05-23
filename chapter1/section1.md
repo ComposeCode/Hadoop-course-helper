@@ -74,4 +74,44 @@ Hadoop includes a number of different Data Access Frameworks:
 
 - Cascading is an application development framework for building data applications on top of Hadoop. Acting an an abstraction layer, it allows applications to run MapReduce jobs.
 
-- Apache HBase is a non-relation database (otherwise known as a no SQL database). HBase was created for hosting very large tables with billions of rows and millions of columns. HBase  
+- Apache HBase is a non-relation database (otherwise known as a no SQL database). HBase was created for hosting very large tables with billions of rows and millions of columns. HBase was created for hosting very large tables with billions of rows and millions of columns. HBase provides random, real-time access to data. It adds some transactional capabilities to Hadoop, allowing users to conduct table inserts, updates, scans and deletes.
+
+- Apache Phoenix is a client-side SQL front-end for HBase that provides direct, low-latency access to HBase. It is written in Java and enables querying and managing HBase tables using SQL commands.
+
+- Apache Accumulo is a low-latency, large table data storage and retrieval system with cell-level security. It is based on Google's Bigtable but runs on YARN.
+
+- Apache Storm is a distributed computation system for processing continuous streams of real-time data. Storm augments the batch processing capabilities provided by MapReduce and
+
+- Apache Solr is a distributed search platform capable of indexing petabytes of data. It provides user-friendly, interactive search to help businesses find data patterns, relationships and correlations across such data.
+
+- Apache Spark is an open source, general purpose processing engine that allows data scientists to build and run fast, sophisticated applications on Hadoop. It provides a simple set of easy-to-understand programming APIS that are used to build applications at a rapid pace in Scala. It also supports SQL-like queries, streaming data applications, complex analytics such as machine learning and graph algorithms.
+
+- Apache Falcon is a data governance tool. It provides a workflow orchestration framework for data motion, coordination of data pipelines, lifecycle management and data discovery. Falcon enables data stewards and Hadoop administrators to quickly onboard data and configure its associated processing and management on Hadoop clusters.
+
+- WebHDFS uses the standard HTTP verbs GET, PUT, POST and DELETE to access, operate and manage HDFS. Using WebHDFS, a user can create, list and delete directories, as well as create, read, append and delete files. A user can also manage file and directory ownership/permissions using WebHDFS.
+
+- The HDFS NFS Gateway allows access to HDFS as though it were part of an NFS client's local file system. The Hadoop file system can be mounted using a regular NFS client mount, which allows regular bash commands to be used for copying/backing up data, running scripts, exploring the file system, or modifying data on HDFS.
+
+- Apache Flume is a distributed, reliable and available service that efficiently collects, aggregates and moves streaming data. It is a distributed service because it can be deployed across many systems. The benefits of a distributed system include increased scalability and redundancy. It is reliable because its architecture and components are designed to prevent data loss. It is highly-available because it uses redundancy to limit downtime.
+
+- Apache Sqoop is a collection of related tools. The primary tools are the import and export tools. Sqoop makes it easier to transfer data between a relational database, data warehouse and Hadoop.
+
+- Apache Kafka is a fast, scalable, durable, fault-tolerant publish-subscribe messaging system. Kafka is often use din place of traditional message brokers like Java Messaging Service (JMS) or Advance Message Queueing Protocol (AMQP).
+
+- Apache Atlas provides governance services that enable enterprises to meet compliance requirements within Hadoop and enables integration with the complete enterprise data ecosystem.
+
+### Security Frameworks
+
+There are a number of different security frameworks within Hadoop:
+
+- HDFS provides security through access control lists, directory permissions and transparent data encryption.
+
+- YARN includes access control lists and control access to cluster memory, CPU resources along with YARN administrative capabilities.
+
+- Hive can be configured to control access to table rows and columns.
+
+- Falcon is a data governance tool that also includes access controls that limit who may submit workflow jobs on a Hadoop cluster.
+
+- Apache Knox is the perimeter gateway protecting a Hadoop cluster. It provides a single point of authentication into a Hadoop cluster.
+
+- Apache Ranger is a centralized security framework offering fine-grained. 
