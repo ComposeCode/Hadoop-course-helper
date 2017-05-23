@@ -48,4 +48,30 @@ Hadoop is a collection of different software frameworks and not a single piece o
 
 There are two data management frameworks known as HDFS and YARN:
 
-- HDFS is a Java-based distributed file system which provides scalable, reliable and high-throughput access to application data stored across multiple servers. The file system is similar to many other conventional file systems such as the Linux File System. HDFS supports read, write and delete operations on file. 
+- HDFS is a Java-based distributed file system which provides scalable, reliable and high-throughput access to application data stored across multiple servers. The file system is similar to many other conventional file systems such as the Linux File System. HDFS supports read, write and delete operations on file.
+
+- YARN is used for cluster resource management and job scheduling. It allows for multiple data processing engines such as Interactive SQL, real-time streaming, data science and batch processing to con-exist on a single cluster.
+
+There are four Operations Frameworks:
+
+- Ambari provides a Web UI for managing, provisioning and monitoring Hadoop clusters. The software also provides a collection of intuitive  operator tools and RESTful APIS that simplify the complexity of Hadoop and the operations of clusters.
+
+- Zookeeper is used to coordinate distributed applications and services. It is designed to mitigate race conditions, deadlock, scalability and security issues, network outages, bandwidth limitations and synchronization issues.
+
+- CloudBreak is a tool for provisioning, managing and monitoring on-demand clusters. It is used to automate the launching of elastic Hadoop clusters with policy-based autoscaling on most major cloud platforms, such as Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform, Openstack and Docker containers.
+
+- Oozie is a server-based workflow engine used to execute Hadoop jobs. Oozie enables Hadoop users to build and schedule complex data transformations by coming MapReduce, Apache Hive, Apache Pig and Apache Sqoop jobs into a single, logical unit of work. Oozie can also perform Java, Linux shell, distcp, SSH, email and other operations.
+
+## Data Access Frameworks
+
+Hadoop includes a number of different Data Access Frameworks:
+
+- Apache Pig is used for extracting, transforming and analyzing large datasets. It is also useful for traversing the HDFS file system with commands like cd and ls. Pig includes a scripted, procedural-based language that excels at building data pipelines to aggregate and add structure to data.
+
+- Apache Hive is a tool which allows you to use SQL-like queries against data in Hadoop. The SQL queries are automatically converted to
+
+- Apache HCatalog is a table information, schema, and metadata management system for Hive, Pig, MapReduce, Tez. HCatalog is actually a module in Hive that enables non-Hive tools to access Hive metadata tables. This tool also provides a REST API named WebHCat which makes metadata and table information available to other vendors tools.
+
+- Cascading is an application development framework for building data applications on top of Hadoop. Acting an an abstraction layer, it allows applications to run MapReduce jobs.
+
+- Apache HBase is a non-relation database (otherwise known as a no SQL database). HBase was created for hosting very large tables with billions of rows and millions of columns. HBase  
