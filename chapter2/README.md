@@ -1,1 +1,1 @@
-# Hadoop Course Helper - Managing Ambari Users and Groups - Chapter 1
+# Hadoop Course Helper - Managing Ambari Users and Groups - Chapter 2
